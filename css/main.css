@@ -85,18 +85,14 @@ textarea {
 
 /************* Base Styles ***************/
 
-html {
-  font-size: 16px;
-}
-
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  font-size: 1em;
   line-height: 1.5;
+  font-size: 1.12em;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -149,24 +145,11 @@ img {
 }
 
 h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.25px;
   width: 100%; 
 }
 
-h1 {
- font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.25em;
-}
 
 ul {
   list-style: none;
@@ -192,7 +175,7 @@ ul i {
 }
 
 .background-navy {
-  background: midnightblue;
+  background: rgb(17, 17, 83);
   color: whitesmoke;
 }
 
@@ -226,10 +209,10 @@ nav a, footer a {
 
 .social i {
   color: navy;
-}
+  margin: 0 10px;
+  }
 
 /********** nav ***********/
-
 nav {
   display: flex;
   justify-content: center;
@@ -254,13 +237,11 @@ nav ul li {
 }
 
 nav ul li a {
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
 }
 
 /* nav quicklinks dropdown */
-
 .dropdown {
   overflow: hidden;
 }
@@ -274,7 +255,8 @@ nav ul li a {
   font-family: inherit;
   margin: 0;
   display: flex;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .dropdown .dropbtn i {
@@ -282,7 +264,7 @@ nav ul li a {
 }
 
 nav li:hover, .dropdown:hover .dropbtn {
-  background-color: navy;
+  background-color: rgb(17, 17, 83);;
 }
 
 .dropdown-content {
@@ -310,17 +292,11 @@ nav li:hover, .dropdown:hover .dropbtn {
   display: block;
 }
 
-/* nav .social */
-
-.social i {
-  margin: 0 10px;
-}
-
 /********** header ********/
 
 header {
   padding-top: 50px;
-  background: midnightblue;
+  background: rgb(17, 17, 83);
 }
 
 .hero-area {
@@ -330,33 +306,23 @@ header {
 }
 
 #main-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/pbc-logo.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/pbc-logo.png');
   background-position: center;
   background-size: contain;
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   color: white;
 }
 
 #main-hero h1 {
-  font-size: 3em;
   margin: 0;
-  text-shadow: 1px 2px 4px rgb(29, 29, 29);
+  text-shadow: 1px 2px 0 rgb(29, 29, 29);
+  font-size: 3em;
+  letter-spacing: 2px;
 }
 
 /********* footer *********/
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 30px;
-}
-
-.footer-table tr {
-  margin: 20px 0;
-}
 
 /********** main page **********/
 /* about */
@@ -377,8 +343,10 @@ footer {
 #about1 {
   text-align: center;
 }
+
 #about2 {
   flex-flow: row wrap; 
+  width: 100%;
 }
 
 #about2-wrapper {
@@ -401,8 +369,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 35%; 
   position: relative;
-  width: 40%; 
 }
 
 .about-images img {
@@ -425,6 +393,7 @@ footer {
   border-radius: 0 3px 3px 0;
   user-select: none;
   padding: 20px;
+  z-index: -1;
 }
 
 .prev {
@@ -443,18 +412,13 @@ footer {
 /***** mission *****/
 
 .mission {
-  background: midnightblue;
+  background:rgb(17, 17, 83);
   text-align: center;
   color: white;
-  padding: 100px;
-}
-
-.mission h2 {
-  font-family: 'Open Sans', sans-serif;
+  min-height: 400px;
 }
 
 #mission-content {
-  width: 75%; 
   margin: 50px 75px; 
 }
 
@@ -665,6 +629,11 @@ iframe {
   text-align: center;
 }
 
+#contact-hero h2 {
+  text-transform: initial;
+  font-weight: 500;
+}
+
 .contact h3 {
   margin-bottom: 0;
 }
@@ -814,9 +783,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1024px) {
   
   /* home */
- #main-hero h1 {
-   font-size: 2.5em;
- }
+
 
   /* teams */
   .teams {
@@ -856,9 +823,7 @@ header {
   padding: 0;
 }
 
-#main-hero h1 {
-  font-size: 2em;
-}
+
 
 /* about */
 #about1 {
@@ -868,6 +833,7 @@ header {
 #about2-wrapper {
   justify-content: center; 
   margin: 30px 0; 
+  padding: 0; 
 }
 
 #our-goals {
@@ -876,17 +842,12 @@ header {
 }
 
 .about-images {
-  width: auto; 
+  display: none;
 }
 
 /* mission */
-.mission {
-  padding: 50px 0; 
-}
-
 #mission-content {
   margin:  0; 
-  width: 90%; 
 }
 
 /* fanshop */
@@ -901,7 +862,6 @@ header {
 .teams-column, #tryouts-table, #faq-table, #clinics3 ul li, .schedule-link, .contact, .contact .row, .contact .column, #contact-info, #contact-form-column {
   width: 100%;
 }
-
 
 /* tryouts */
 .tryouts {
