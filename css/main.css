@@ -94,6 +94,7 @@ body {
   line-height: 1.5;
   font-size: 1.12em;
   font-family: 'Open Sans', sans-serif;
+  background-color: whitesmoke;
 }
 
 * {
@@ -109,7 +110,7 @@ main, nav, header, .hero-area, footer {
 }
 
 main {
-  padding: 75px 0;
+  padding: 100px 0;
 }
 
 .row {
@@ -145,7 +146,6 @@ img {
 }
 
 h1, h2, h3 {
-  font-weight: 700;
   text-transform: uppercase;
   width: 100%; 
 }
@@ -175,13 +175,13 @@ ul i {
 }
 
 .background-navy {
-  background: rgb(17, 17, 83);
-  color: whitesmoke;
+  background:midnightblue;
+  color: white;
 }
 
 .background-red {
   background: #cd212a;
-  color: whitesmoke;
+  color: white;
 }
 
 .background-gray {
@@ -193,11 +193,10 @@ ul i {
 nav, footer {
   background: #cd212a;
   width: 100%;
-  color: whitesmoke;
 }
 
-nav a, footer a {
-  color: whitesmoke;
+nav, nav a, footer a {
+  color: white;
 }
 
 .social {
@@ -238,7 +237,6 @@ nav ul li {
 
 nav ul li a {
   text-transform: capitalize;
-  font-weight: 600;
 }
 
 /* nav quicklinks dropdown */
@@ -256,7 +254,6 @@ nav ul li a {
   margin: 0;
   display: flex;
   text-transform: capitalize;
-  font-weight: 600;
 }
 
 .dropdown .dropbtn i {
@@ -264,7 +261,7 @@ nav ul li a {
 }
 
 nav li:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(17, 17, 83);;
+  background-color: navy;
 }
 
 .dropdown-content {
@@ -284,7 +281,7 @@ nav li:hover, .dropdown:hover .dropbtn {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover  {
   background-color: lightgray;
 }
 
@@ -310,7 +307,7 @@ header {
   background-position: center;
   background-size: contain;
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   color: white;
 }
 
@@ -322,7 +319,85 @@ header {
 }
 
 /********* footer *********/
+footer {
+  padding-top: 20px;
+}
 
+#footer1, #footer2 {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap; 
+  width: 100%; 
+}
+
+#footer1 {
+  margin: 20px 0; 
+}
+
+#footer1 .content-wrapper {
+  justify-content: space-around;
+}
+
+#footer1 i {
+  font-size: 1.125em;
+}
+
+footer a:hover {
+  color: navy; 
+}
+
+.copyright {
+  margin: 0;
+  font-size: .875em;
+  color: rgb(226, 224, 224);
+}
+/* Dropup Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {background-color: #ddd}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  color:navy;
+}
 
 /********** main page **********/
 /* about */
@@ -355,7 +430,7 @@ header {
 }
 
 #about2 h2 {
-  width: 100%; 
+  padding-left: 5px;
 }
 
 #our-goals {
@@ -371,11 +446,11 @@ header {
   align-items: center;
   width: 35%; 
   position: relative;
+  padding-top: 50px;
 }
 
 .about-images img {
-  padding: 5px; 
-  border: 2px solid #282d3c; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .mySlides {
@@ -386,14 +461,13 @@ header {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
   padding: 20px;
-  z-index: -1;
 }
 
 .prev {
@@ -437,8 +511,7 @@ header {
 
 .fanshop-images figure {
   width: 15%;
-  border: 2px solid #282d3c;
-  background-color: gainsboro;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -458,8 +531,9 @@ header {
 #clinics1 {
   padding: 50px 0;
 }
+
 #clinics2 {
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 #clinics-sched {
   align-items: flex-start;
@@ -495,23 +569,31 @@ header {
 }
 
 .teams {
-  width: 90%; 
+  width: 100%; 
   flex-flow: row wrap; 
+  background-color: whitesmoke;
+  padding: 50px 0; 
 }
 
 .teams-column {
   text-align: center;
   border: 1px solid #282d3c;
   flex-direction: column;
-  width: 50%;
+  width: 40%; 
+  background-color: white;
 }
 
+.teams-column .content-wrapper {
+  padding: 30px; 
+}
 .teams-column h3 {
-  width: 100%;
+  width: 80%;
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
 }
 
 .teams-column p {
-  margin: 5px;
+  margin: 10px 5px;
+  width: 20%; 
 }
 
 /********** tryouts *********/
@@ -529,9 +611,19 @@ header {
   flex-direction: column;
 }
 
+#registration-link {
+  border: none; 
+  background-color: navy;
+}
+
+#registration-link:hover {
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
+}
+
 #registration-link a {
-  display: block;
   padding: 10px;
+  display: block;
+  color: white; 
 }
 
 #registration-link, #tryouts-table {
@@ -542,14 +634,19 @@ header {
   width: 75%;
 }
 
+#tryouts-table {
+  background-color: white;
+  border-collapse: collapse;
+}
+
 #tryouts-table tr:hover {
-  background-color: rgb(236, 230, 230);
+  background-color: rgb(233, 233, 233);
 }
 
 #tryouts-table th, #tryouts-table td {
   padding: 8px;
   text-align: left;
-  border: 1px solid #282d3c;;
+  border: 1px solid #282d3c;
 }
 
 #faq-table tr {
@@ -590,6 +687,7 @@ header {
 #schedules-content {
   width: 90%; 
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .schedule-link {
@@ -599,14 +697,19 @@ header {
   flex-direction: column;
 }
 
+.schedule-link h3 {
+  width: 90%; 
+}
 .schedule-link h3 a {
   color: navy; 
 }
 
 iframe {
-  width: 100%; 
-  height: 250px;
+  width: 90%; 
+  height: 300px;
   overflow: scroll; 
+  background-color: white;
+  border: 1px solid #282d3c ; 
 }
 /********** contact *********/
 .contact, #contact-form {
@@ -639,7 +742,7 @@ iframe {
 }
 
 #change-color, .contact a {
-  color: rgb(32, 32, 150); 
+  color:rgb(37, 37, 150); 
 }
 
 .contact .row {
@@ -660,6 +763,7 @@ iframe {
 #contact-social i {
   color: navy; 
   margin: 15px 7px; 
+  font-size: 1.125em;
 }
 
 #leaders {
@@ -692,7 +796,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: midnightblue;
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
 }
 
 /* ==========================================================================
