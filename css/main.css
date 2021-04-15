@@ -296,7 +296,7 @@ header {
 
 .hero-area {
   text-align: center;
-  min-height: 300px; 
+  min-height: 375px; 
   color: ghostwhite;
 }
 
@@ -312,7 +312,7 @@ header {
 #main-hero h1 {
   margin: 0;
   text-shadow: 1px 2px 0 rgb(29, 29, 29);
-  font-size: 3em;
+  font-size: 3vw;
   letter-spacing: 2px;
 }
 
@@ -885,8 +885,15 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 1024px) {
   
-  /* home */
-
+  #main-hero h1 {
+    font-size: 5vw;
+  }
+  
+  /* about */
+  .about-images {
+    padding: 0; 
+    width: 40%; 
+  }
 
   /* teams */
   .teams {
@@ -905,7 +912,7 @@ input[type=submit]:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 /* nav */
 nav ul {
   width: auto;
@@ -917,15 +924,17 @@ nav ul li {
 }
 
 /* header */
-header {
-  padding-top: 100px; 
-  min-height: 350px;
+header { 
+  min-height: 300px;
 }
 
 .hero-area {
   padding: 0;
 }
 
+#main-hero {
+  min-height: 400px;
+}
 
 
 /* about */
