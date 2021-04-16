@@ -92,19 +92,18 @@
 				</div>
 			
 				<div class="column" id="contact-form-column">
-					<form id="contact-form" action="mailto:pbcomaha@gmail.com">
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-					<label for="email">Email</label>
-					<input type="text" id="email" name="email-address" placeholder="Your email..">
-					<label for="subject">Subject</label>
-					<textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea>
-					<input type="submit" value="Submit">
+					<form id="contact-form" action="https://formsubmit.co/pbcomaha@gmail.com" method="POST" />
+					<input type="text" name="_honey" style="display:none">
+					<input type="text" name="name" class="form-control" placeholder="Full Name" required>
+					<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+					<input type="hidden" name="_subject" value="New submission!">
+					<textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+					<button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+					<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
 				</form>
 			</div>
 		</div>
+	</div>
 	</div>
 	</main>
 

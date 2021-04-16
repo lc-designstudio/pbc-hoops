@@ -708,7 +708,6 @@ iframe {
   height: 300px;
   overflow: scroll; 
   background-color: white;
-  border: 1px solid #282d3c ; 
 }
 /********** contact *********/
 .contact, #contact-form {
@@ -776,17 +775,18 @@ iframe {
 #contact-form {
   justify-content: center;
   width: 100%; 
+  
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], textarea {
   padding: 12px;
-  border: 1px solid rgb(35, 35, 36);
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  border: 1px solid gainsboro;
 }
 
-input[type=submit] {
+button[type=submit] {
   background-color: midnightblue;
   color: white;
   padding: 12px 20px;
@@ -794,7 +794,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover, input[type=text]:hover, input[type=email]:hover, textarea:hover{
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
 }
 
