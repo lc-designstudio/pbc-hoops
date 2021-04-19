@@ -560,44 +560,8 @@ footer a:hover {
   color: #cd212a;
 }
 
-/********* teams **********/
-.teams, .teams-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.teams {
-  width: 100%; 
-  flex-flow: row wrap; 
-  background-color: whitesmoke;
-  padding: 50px 0; 
-}
-
-.teams-column {
-  text-align: center;
-  border: 1px solid #282d3c;
-  flex-direction: column;
-  width: 40%; 
-  background-color: white;
-}
-
-.teams-column .content-wrapper {
-  padding: 30px; 
-}
-.teams-column h3 {
-  width: 80%;
-  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
-}
-
-.teams-column p {
-  margin: 10px 5px;
-  width: 20%; 
-}
-
-/********** tryouts *********/
-
-.tryouts, .tryouts-faq {
+/********* teams/ tryouts base styles **********/
+.teams, .tryouts, .tryouts-faq {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -605,9 +569,49 @@ footer a:hover {
   width: 100%;
   padding: 50px 0;
 }
+#teams-table, #tryouts-table {
+  background-color: white;
+}
 
+#teams-table, #teams-table th, #teams-table td, #tryouts-table th, #tryouts-table td{
+  border: 1px solid #282d3c;
+}
+
+#teams-table th, #tryouts-table th {
+  background-color: midnightblue;
+  color: white; 
+}
+
+#teams-table tr:hover, #tryouts-table tr:hover {
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
+  background-color: lightgray;
+}
+
+/********** teams *********/
+#teams-table {
+  width: 65%; 
+}
+
+#teams-table th, #teams-table td {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#teams-table .font-red {
+  font-weight: 600;
+}
+
+#teams-table td ul li {
+  margin: 5px 0; 
+}
+/********** tryouts *********/
 .tryouts .content-wrapper {
   flex-direction: column;
+}
+
+.tryouts span {
+  color: red;
+  font-weight: 700;
 }
 
 #registration-link {
@@ -616,7 +620,7 @@ footer a:hover {
 }
 
 #registration-link:hover {
-  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 1px 3px 8px 0px rgba(58, 55, 55, 0.5);
 }
 
 #registration-link a {
@@ -633,19 +637,9 @@ footer a:hover {
   width: 75%;
 }
 
-#tryouts-table {
-  background-color: white;
-  border-collapse: collapse;
-}
-
-#tryouts-table tr:hover {
-  background-color: rgb(233, 233, 233);
-}
-
 #tryouts-table th, #tryouts-table td {
-  padding: 8px;
-  text-align: left;
-  border: 1px solid #282d3c;
+  padding: 10px; 
+  text-align: center;
 }
 
 #faq-table tr {
