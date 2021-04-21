@@ -110,7 +110,7 @@ main, nav, header, .hero-area, footer {
 }
 
 main {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .row {
@@ -531,19 +531,39 @@ footer a:hover {
   padding: 50px 0;
 }
 
+.academy-sesh {
+  display: flex;
+  align-items: center;
+  width: 50%; 
+  margin-top: 50px;
+}
+
+.academy-table {
+  width: 90%;
+  border-collapse: collapse;
+  text-align: justify;
+  background-color: white;
+}
+ 
+.academy-table th, .academy-table td {
+  padding: 10px 20px; 
+  border: 1px solid black; 
+}
+
+.academy-table h4 {
+  margin: 0; 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.academy-table span {
+  font-weight: 600;
+}
+
+
 #clinics2 {
   padding: 50px 0;
 }
-#clinics-sched {
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.clinics-p {
-  width: 45%;
-  margin-top: 20px;
-}
-
 
 #clinics3 ul {
   justify-content: left;
@@ -569,12 +589,14 @@ footer a:hover {
   width: 100%;
   padding: 50px 0;
 }
-#teams-table, #tryouts-table {
+
+#tryouts-table {
   background-color: white;
 }
 
-#teams-table, #teams-table th, #teams-table td, #tryouts-table th, #tryouts-table td{
+#tryouts-table th, #tryouts-table td{
   border: 1px solid #282d3c;
+  border-collapse: collapse;
 }
 
 #teams-table th, #tryouts-table th {
@@ -582,28 +604,67 @@ footer a:hover {
   color: white; 
 }
 
-#teams-table tr:hover, #tryouts-table tr:hover {
+.academy-table tr:hover, #tryouts-table tr:hover {
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
   background-color: lightgray;
 }
 
 /********** teams *********/
-#teams-table {
-  width: 65%; 
+.teams #teams-wrapper {
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid black;
+}
+.teams .column {
+  width: 50%; 
+  background-color: white;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 375px;
 }
 
-#teams-table th, #teams-table td {
-  padding: 10px 20px;
+.teams .colgroup {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0; 
+}
+
+.teams #teamscol1 {
+  padding-top: 20px; 
+  padding-bottom: 0px;
+}
+
+.teams #row-1 {
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+ .teams #teamscol2 {
+  padding-top: 50px; 
+  padding-bottom: 20px;
+}
+
+.teams #grade4, .teams #grade6, .teams #grade8 {
+  border-left: 1px solid black;
+}
+.teams .row {
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.teams h3 {
   text-align: center;
+  padding: 20px 0; 
+  margin: 0; 
 }
 
-#teams-table .font-red {
+.teams span {
   font-weight: 600;
+  margin-right: 10px;
 }
 
-#teams-table td ul li {
-  margin: 5px 0; 
-}
 /********** tryouts *********/
 .tryouts .content-wrapper {
   flex-direction: column;
@@ -985,6 +1046,15 @@ header {
 /* clinics */
 #clinics1 {
   padding-top: 0; 
+}
+
+.academy-sesh {
+  width: 100%;
+  justify-content: center;
+}
+
+.academy-table {
+  width: 100%; 
 }
 
 /* contact */ 
