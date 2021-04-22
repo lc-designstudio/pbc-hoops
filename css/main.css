@@ -590,81 +590,48 @@ footer a:hover {
   padding: 50px 0;
 }
 
-#tryouts-table {
+#teams-table, #tryouts-table {
   background-color: white;
 }
 
-#tryouts-table th, #tryouts-table td{
+#teams-table, #teams-table td, #teams-table th, #tryouts-table, #tryouts-table th, #tryouts-table td{
   border: 1px solid #282d3c;
   border-collapse: collapse;
 }
 
-#teams-table th, #tryouts-table th {
+ #teams-table th, #tryouts-table th {
   background-color: midnightblue;
   color: white; 
 }
 
-.academy-table tr:hover, #tryouts-table tr:hover {
+#teams-table tr:hover, .academy-table tr:hover, #tryouts-table tr:hover {
   box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
   background-color: lightgray;
 }
 
 /********** teams *********/
-.teams #teams-wrapper {
-  align-items: flex-start;
-  background-color: white;
-  border: 1px solid black;
-}
-.teams .column {
-  width: 50%; 
-  background-color: white;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 375px;
+#teams-table {
+  width: 65%; 
 }
 
-.teams .colgroup {
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px 0; 
-}
-
-.teams #teamscol1 {
-  padding-top: 20px; 
-  padding-bottom: 0px;
-}
-
-.teams #row-1 {
-  margin-top: 50px;
-  padding-top: 20px;
-}
-
- .teams #teamscol2 {
-  padding-top: 50px; 
-  padding-bottom: 20px;
-}
-
-.teams #grade4, .teams #grade6, .teams #grade8 {
-  border-left: 1px solid black;
-}
-.teams .row {
-  padding-top: 50px;
-  margin-top: 50px;
-}
-
-.teams h3 {
+#teams-table th, #teams-table td {
+  padding: 10px 20px;
   text-align: center;
-  padding: 20px 0; 
-  margin: 0; 
 }
 
-.teams span {
+#teams-table .font-red {
   font-weight: 600;
-  margin-right: 10px;
 }
 
+#teams-table .flex {
+    display: flex; 
+    justify-content: center; 
+    align-content: center; 
+}
+
+#teams-table ul li {
+  margin: 5px; 
+}
 /********** tryouts *********/
 .tryouts .content-wrapper {
   flex-direction: column;
