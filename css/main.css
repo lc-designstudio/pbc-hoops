@@ -428,17 +428,17 @@ footer a:hover {
   padding: 100px 0; 
 }
 
-#about2 h2 {
-  padding: 7px;
-}
-
 #our-goals {
   width: 50%; 
 }
-#about2 ul li {
-  padding: 7px 0;
+
+#goals-table .background-navy {
+  margin-bottom: 20px;
 }
 
+#goals-table td {
+  padding: 5px; 
+}
 .about-images {
   display: flex;
   justify-content: center;
@@ -670,10 +670,10 @@ footer a:hover {
   text-align: center;
 }
 
-#faq-table tr {
+#goals-table tr, #faq-table tr {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 5px 0;
 }
@@ -682,11 +682,11 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-#faq-margin h2 {
+#goals-table h2, #faq-margin h2 {
   margin: 0;
 }
 
-#faq-table th {
+#goals-table th, #faq-table th {
   padding-left: 7px;
 }
 
@@ -694,7 +694,7 @@ footer a:hover {
   padding: 0 5px;
 }
 
-#faq-table i {
+#goals-table i, #faq-table i {
   color: #cd212a;
 }
 /********** schedules ********/
