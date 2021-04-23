@@ -301,7 +301,7 @@ header {
 }
 
 #main-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/pbc-logo.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/pbc-logo.png');
   background-position: center;
   background-size: contain;
   width: 100%;
@@ -312,7 +312,7 @@ header {
 #main-hero h1 {
   margin: 0;
   text-shadow: 1px 2px 0 rgb(29, 29, 29);
-  font-size: 3vw;
+  font-size: 3.25vw;
   letter-spacing: 2px;
 }
 
