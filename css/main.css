@@ -1009,8 +1009,13 @@ header {
   text-align: center;
 }
 
-#faq-table tr {
-  align-items: flex-start;
+.tryouts2 {
+  flex-direction: column;
+}
+
+.schedule {
+  border-bottom: 2px solid rgb(37, 37, 150);
+  padding-bottom: 15px; 
 }
 
 /* clinics */
