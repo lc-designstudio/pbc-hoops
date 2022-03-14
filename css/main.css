@@ -416,6 +416,7 @@ footer a:hover {
 
 #about1 {
   text-align: center;
+  padding-top: 50px;
 }
 
 #about2 {
@@ -513,7 +514,122 @@ footer a:hover {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+/********* tryouts base styles **********/
 
+.academy-table tr:hover {
+  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
+  background-color: lightgray;
+}
+
+/********** tryouts *********/
+.tryouts, .faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.tryouts {
+  text-align: center;
+}
+
+#facts {
+  margin-top: 50px;
+}
+
+#facts li {
+  margin: 10px; 
+}
+.tryouts2  {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 50px;
+  width: 90%;
+}
+
+
+#main-page {
+  background-color: white;
+  padding: 0, 100px; 
+}
+
+#main-page h3 a {
+color: rgb(228, 49, 49);
+text-decoration: underline;
+}
+
+
+#registration-link {
+  border: none; 
+  background-color: midnightblue;
+  width: 30%;
+}
+
+#registration-link:hover {
+  box-shadow: 1px 3px 8px 0px rgba(58, 55, 55, 0.5);
+}
+
+#registration-link a {
+  padding: 10px;
+  display: block;
+  color: white; 
+}
+
+#registration-link {
+  margin: 30px 0;
+}
+
+.tryouts2 {
+  text-align: center;
+}
+
+.faqs {
+  margin-top: 100px;
+}
+
+.faq {
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.faq h3 {
+  text-transform: none;
+}
+
+#goals-table tr, #faq-table tr {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 5px 0;
+}
+
+#faq-margin {
+  margin-bottom: 20px;
+}
+
+#goals-table h2 {
+  margin: 0;
+}
+
+#goals-table th {
+  padding-left: 7px;
+}
+
+#faq-table td {
+  padding: 0 5px;
+}
+
+#goals-table i, #faq-table i {
+  color: #cd212a;
+}
+
+/*****faqs***********/
+.faqs .content-wrapper {
+  padding: 0, 25px;
+}
 /********** clinics page *********/
 .clinics, #clinics3 ul {
   display: flex;
@@ -580,123 +696,6 @@ footer a:hover {
   color: #cd212a;
 }
 
-/********* teams/ tryouts base styles **********/
-.teams, .tryouts, .tryouts-faq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-  padding: 50px 0;
-}
-
-#teams-table, #tryouts-table {
-  background-color: white;
-}
-
-#teams-table, #teams-table td, #teams-table th, #tryouts-table, #tryouts-table th, #tryouts-table td{
-  border: 1px solid #282d3c;
-  border-collapse: collapse;
-}
-
- #teams-table th, #tryouts-table th {
-  background-color: midnightblue;
-  color: white; 
-}
-
-#teams-table tr:hover, .academy-table tr:hover, #tryouts-table tr:hover {
-  box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.2);
-  background-color: lightgray;
-}
-
-/********** teams *********/
-#teams-table {
-  width: 65%; 
-}
-
-#teams-table th, #teams-table td {
-  padding: 10px 20px;
-  text-align: center;
-}
-
-#teams-table .font-red {
-  font-weight: 600;
-}
-
-#teams-table .flex {
-    display: flex; 
-    justify-content: center; 
-    align-content: center; 
-}
-
-#teams-table ul li {
-  margin: 5px; 
-}
-/********** tryouts *********/
-.tryouts .content-wrapper {
-  flex-direction: column;
-}
-
-.tryouts span {
-  color: red;
-  font-weight: 700;
-}
-
-#registration-link {
-  border: none; 
-  background-color: midnightblue;
-}
-
-#registration-link:hover {
-  box-shadow: 1px 3px 8px 0px rgba(58, 55, 55, 0.5);
-}
-
-#registration-link a {
-  padding: 10px;
-  display: block;
-  color: white; 
-}
-
-#registration-link, #tryouts-table {
-  margin: 30px 0;
-}
-
-#tryouts-table, #faq-table {
-  width: 75%;
-}
-
-#tryouts-table th, #tryouts-table td {
-  padding: 10px; 
-  text-align: center;
-}
-
-#goals-table tr, #faq-table tr {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
-  padding: 5px 0;
-}
-
-#faq-margin {
-  margin-bottom: 20px;
-}
-
-#goals-table h2, #faq-margin h2 {
-  margin: 0;
-}
-
-#goals-table th, #faq-table th {
-  padding-left: 7px;
-}
-
-#faq-table td {
-  padding: 0 5px;
-}
-
-#goals-table i, #faq-table i {
-  color: #cd212a;
-}
 /********** schedules ********/
 
 #schedules-content, .schedule-link {
@@ -924,8 +923,12 @@ button[type=submit]:hover, input[type=text]:hover, input[type=email]:hover, text
   }
 
   /* tryouts */
-  .tryouts-faq {
-    margin-bottom: 0;
+  .tryouts {
+    text-align: center;
+  }
+
+  #registration-link {
+    width: 50%
   }
 
   /* contact */
